@@ -44,10 +44,6 @@ function Header() {
         {
             title: "Liên hệ",
             to: "/contact"
-        },
-        {
-            title: "Tour hè 2022",
-            to: "/blog"
         }
     ]
 
