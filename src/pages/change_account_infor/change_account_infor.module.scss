@@ -1,0 +1,99 @@
+.wrapper {
+    padding: 32px 0;
+}
+.page-header {
+    > h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    > p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #6b6b6b;
+    }
+}
+.group-field-inner {
+    display: flex;
+}
+.user-label {
+    min-width: 146px;
+    > label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+.show-info-user {
+    width: calc(100% - 146px);
+    display: flex;
+    justify-content: space-between;
+    > span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    > img {
+        width: 64px;
+        height: 64px;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #febb02;
+    }
+}
+.change-info-user {
+    width: calc(100% - 146px);
+    display: flex;
+    justify-content: space-between;
+    > form {
+        width: 100%;
+    }
+}
+.wr-edit-cancel {
+    min-width: 110px;
+    margin-left: 16px;
+    text-align: right;
+}
+.edit-cancel {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #0071c2;
+    background: none;
+    padding: 4px 8px;
+    text-align: right;
+    &:hover {
+        background-color: #f2f7fc;
+    }
+}
+.box-name {
+    display: flex;
+    margin: 0 -8px;
+    margin-bottom: 1rem;
+    > div {
+        width: 50%;
+        margin: 0 8px;
+    }
+}
+.save-info-user {
+    margin-top: 16px;
+    text-align: right;
+    > button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #fff;
+        padding: 4px 12px;
+        background-color: #0071c2;
+        min-height: 36px;
+        &:hover {
+            background-color: #00487a;
+        }
+    }
+}
+.group-field {
+    padding: 16px 0;
+    border-top: 1px solid #e6e6e6;
+}

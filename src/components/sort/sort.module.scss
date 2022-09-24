@@ -1,0 +1,16 @@
+.list-sort {
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        > button {
+            padding: 12px 16px;
+            width: 100%;
+            background-color: transparent;
+            text-align: left;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.wrapper {
+    padding: 32px 0 64px;
+}
+.page-header {
+    margin-bottom: 24px;
+    > h1 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: #606770;
+    }
+}
+.page-body {
+    background-color: #fff;
+    border-radius: 8px;
+    border-top: 1px solid #dadde1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+    width: 432px;
+    margin: 0 auto;
+}
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.box-name {
+    display: flex;
+    margin: 0 -8px;
+    margin-bottom: 1rem;
+    > div {
+        width: 50%;
+        margin: 0 8px;
+    }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+    nav {
+        padding: 0;
+    }
+    ul {
+        width: 100%;
+        padding-left: var(--bui_spacing_4x);
+        padding-right: var(--bui_spacing_4x);
+        > li {
+            @media (min-width: 1024px) {
+                &:not(:first-child) {
+                    padding-left: var(--bui_spacing_1x);
+                }
+            }
+        }
+    }
+}
+.nav-link {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 11px 16px;
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    &.active,
+    &:hover {
+        color: var(--bui_color_white);
+        border-color: var(--bui_color_white);
+    }
+}

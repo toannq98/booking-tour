@@ -1,0 +1,33 @@
+.wrapper {
+    margin-bottom: 40px;
+    > h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}
+.list-top {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: flex;
+    justify-content: flex-end;
+}
+.list-tour {
+    padding-top: 16px;
+    > div {
+        &:first-child {
+            > div {
+                padding: 0 8px 16px 8px;
+                flex: 1 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}

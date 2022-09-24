@@ -1,0 +1,77 @@
+.wrapper {
+    margin-bottom: 32px;
+    .nav-pills-custom {
+        a {
+            background: none;
+            border: 0;
+            color: #262626;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            max-width: none;
+            outline: none;
+            padding: var(--bui_spacing_4x);
+            position: relative;
+            text-decoration: none;
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+            &::before {
+                background: #0071c2;
+                bottom: 0;
+                content: '';
+                height: 2px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+            &[aria-selected='true'] {
+                color: #0071c2;
+                background: none;
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.06);
+            }
+        }
+    }
+}
+.nav-pills-custom {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    &::before {
+        background: #e7e7e7;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.nav-item-custom:last-child {
+    margin-left: auto;
+}
+
+.tab-content-custom {
+    margin-top: 16px;
+    > div:first-child {
+        > div {
+            padding: 0 8px 16px 8px;
+            flex: 1 0 33.3%;
+            max-width: 33.3%;
+            flex: 1 0 25%;
+            max-width: 25%;
+        }
+    }
+}

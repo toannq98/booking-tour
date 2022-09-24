@@ -1,0 +1,9 @@
+export const toursSelecter = (state) => state.tour.tours;
+export const categoriesSelecter = (state) => state.tour.categories;
+export const toursByCategoryInCountrySelecter = (state) => state.tour.toursByCategoryInCountry;
+export const toursByCategoryOverseasSelecter = (state) => state.tour.toursByCategoryOverseas;
+export const toursSearchSelecter = (state) => state.tour.filters.toursSearch;
+export const toursPriceHightToLowSelecter = (state) => state.tour.sorts.toursPriceHightToLow;
+export const toursCatePageSelecter = (state) => state.tour.toursCatePage;
+export const tourSelecter = (state) => state.tour.tour;
+export const toursBookedSelecter = (state) => state.tour.toursBooked;

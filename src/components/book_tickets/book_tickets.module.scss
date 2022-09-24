@@ -1,0 +1,115 @@
+.wrapper {
+    margin: 8px 0;
+    padding: 16px;
+    border: 1px solid rgb(0, 113, 194);
+    border-radius: 2px;
+    background: rgb(228, 244, 255);
+    > h4 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+.option-quantity {
+    margin: 8px 0;
+    > h5 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+.quantity-item {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:not(:last-of-type) {
+        margin-bottom: 16px;
+        .item-left {
+            margin-right: 8px;
+            label {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+            span {
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #6b6b6b;
+            }
+        }
+        .item-right {
+            display: flex;
+            align-items: center;
+            border: 1px solid #949494;
+            > button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: #e4f4ff;
+                &:hover {
+                    background-color: #d8edfc;
+                }
+                svg {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    fill: #0071c2;
+                }
+            }
+            > span {
+                width: 32px;
+                margin: 0 4px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+        }
+    }
+    &:last-of-type {
+        .item-left {
+            span {
+                &:first-of-type {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    display: block;
+                    color: #949494;
+                }
+                &:last-of-type {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+        .item-right {
+            button {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                padding: 4px 12px;
+                color: #fff;
+                background-color: #0071c2;
+                display: block;
+                min-width: 122px;
+                height: 36px;
+                &:hover {
+                    background-color: #00487a;
+                }
+            }
+        }
+    }
+}
+.mess-error {
+    margin-bottom: 0;
+    color: #cc0000;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: italic;
+}

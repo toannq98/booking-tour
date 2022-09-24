@@ -1,0 +1,15 @@
+.wrapper {
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 2px;
+    border: 1px solid var(--bui_color_action_foreground);
+    color: var(--bui_color_action_foreground);
+    height: 36px;
+    transition: all 0.4s;
+    svg {
+        fill: var(--bui_color_action_foreground);
+    }
+    &:hover {
+        background-color: #f2f7fc;
+    }
+}

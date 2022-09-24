@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 30px 0;
+}
+.title-page {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.box-item {
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 16px -8px 0 -8px;
+    > div {
+        padding: 0 8px 16px 8px;
+        flex: 1 0 33.3%;
+        max-width: 33.3%;
+        flex: 1 0 25%;
+        max-width: 25%;
+    }
+}

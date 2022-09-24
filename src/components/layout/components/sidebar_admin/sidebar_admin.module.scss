@@ -1,0 +1,16 @@
+.wrapper {
+    padding-top: 18px;
+    li {
+        a {
+            color: #bebebe;
+            font-size: 14px;
+            padding: 0.5rem 0.3125rem 0.5rem 0.938rem;
+            display: inline-block;
+            width: 100%;
+            &:hover,
+            &.active {
+                background-color: #202226;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.inner {
+    padding-top: 30px;
+    display: flex;
+}
+.content-left {
+    width: 33%;
+}
+.main-content {
+    width: 67%;
+    @media (min-width: 1024px) {
+        padding-left: 32px;
+    }
+}

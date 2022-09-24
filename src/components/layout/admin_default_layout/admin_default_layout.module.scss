@@ -1,0 +1,60 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 16px;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+    background-color: #fff;
+    z-index: 999;
+}
+.logo {
+    > h1 {
+        a {
+            font-size: 24px;
+            color: #003580;
+            margin-bottom: 0;
+        }
+    }
+}
+.account {
+    display: flex;
+    align-items: center;
+    > h3 {
+        font-size: 16px;
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+    > button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #0071c2;
+        background: none;
+        padding: 4px 8px;
+        text-align: right;
+        &:hover {
+            background-color: #f2f7fc;
+        }
+    }
+}
+
+.sidebar {
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 13.13rem;
+    height: 100%;
+    background: #363a41;
+    box-shadow: 0 0 15px 0 rgba(34, 41, 47, 0.5);
+}
+.content {
+    margin-top: 50px;
+    padding-left: 13.13rem;
+}

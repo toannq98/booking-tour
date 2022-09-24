@@ -1,0 +1,28 @@
+.image-custom {
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    padding: 5px 10px;
+    &:hover {
+        background-color: rgb(228, 244, 255);
+    }
+}
+.image {
+    width: 70px;
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 70px;
+        object-fit: cover;
+    }
+}
+.text {
+    width: calc(100% - 70px);
+    padding: 10px 15px 0 15px;
+    > h4 {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: rgb(38, 38, 38);
+    }
+}
