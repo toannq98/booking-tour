@@ -213,6 +213,19 @@ body {
             }
         }
     }
+    &[data-placement^='right'] {
+        .msg-err {
+            margin-left: 4px;
+            &::before {
+                left: -11px;
+                background-position: 0px -13px;
+                height: 22px;
+                width: 11px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
     &[data-placement^='bottom'] {
         .msg-err {
             margin-top: 4px;

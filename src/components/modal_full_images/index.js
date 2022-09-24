@@ -47,15 +47,15 @@ function ModalFullImages({ data, open, onClose }) {
         focusOnSelect: true
     }
     const settingsForThumbs = {
-        focusOnSelect: true,
+        // focusOnSelect: true,
         dots: false,
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 8,
+        // slidesToShow: 8,
         slidesToScroll: 1,
         centerMode: true,
-        // variableWidth: true,
+        variableWidth: true,
         asNavFor: sliderFor,
         responsive: [
             {
