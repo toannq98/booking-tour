@@ -204,7 +204,6 @@ function ChangeAccoutInfor() {
                                                     className={cx("form-control")}
                                                     onChange={(e) => handleAvatar(e.target.files[0])}
                                                 />
-                                                <span className={cx("msg-err")}></span>
                                             </div>
                                         </form>
                                         <div className={cx("edit-info-user")}>
@@ -266,7 +265,6 @@ function ChangeAccoutInfor() {
                                                         onChange={(e) => setFirstName(e.target.value)}
                                                     />
                                                     <label className={cx("form-control-label")}>Họ</label>
-                                                    <span className={cx("msg-err")}></span>
                                                 </div>
                                                 <div className="form-group">
                                                     <input
@@ -278,7 +276,6 @@ function ChangeAccoutInfor() {
                                                         onChange={(e) => setLastName(e.target.value)}
                                                     />
                                                     <label className={cx("form-control-label")}>Tên</label>
-                                                    <span className={cx("msg-err")}></span>
                                                 </div>
                                             </div>
                                         </form>
@@ -340,7 +337,6 @@ function ChangeAccoutInfor() {
                                                     onChange={(e) => setEmail(e.target.value)}
                                                 />
                                                 <label className={cx("form-control-label")}>Email</label>
-                                                <span className={cx("msg-err")}></span>
                                             </div>
                                         </form>
                                         <div className={cx("edit-info-user")}>
