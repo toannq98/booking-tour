@@ -97,6 +97,7 @@ function CheckOut() {
                 phoneNumber: ''
             });
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [login.currentUser]);
 
     console.log(formik.values);

@@ -11,7 +11,6 @@ import {
     loadSortPriceLowToHight,
     loadToursCatePage,
     loadTour,
-    setToursBooked,
     loadToursBooked
 } from './tour_slice';
 import * as api from './tour_api';

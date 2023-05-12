@@ -5,8 +5,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 import * as yup from 'yup';
-
 import Tippy from "@tippyjs/react/headless";
+
 import { birthdayTimes, currentDay, currentMonth, currentYear } from '~/birthday_times';
 import Button from "~/components/button";
 import style from './register.module.scss';
@@ -20,11 +20,6 @@ function Register() {
     const [day, setDay] = useState(`${currentDay}`);
     const [month, setMonth] = useState(`${currentMonth}`);
     const [year, setYear] = useState(`${currentYear}`);
-    // const [firstName, setFirstName] = useState('');
-    // const [lastName, setLastName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
-    // const [gender, setGender] = useState('');
     const time = `${month}/${day}/${year}`;
 
     const formik = useFormik({
@@ -60,30 +55,12 @@ function Register() {
             // formik.touched.lastName = true;
         },
     });
-    // console.log(formik.touched);
     const SEXS = [
         "Nữ",
         "Nam",
         "Khác"
     ];
 
-    // const handleRegister = (event) => {
-    //     event.preventDefault();
-    //     dispatch({
-    //         type: "user/fetchCreateUser",
-    //         payload: {
-    //             params: {
-    //                 firstName,
-    //                 lastName,
-    //                 email,
-    //                 password,
-    //                 sex: gender,
-    //                 dateOfBirth: time
-    //             }
-    //         }
-    //     });
-
-    // }
 
     return (
         <div className={cx("wrapper")}>
@@ -94,7 +71,7 @@ function Register() {
                         <p>Nhanh chóng và dễ dàng.</p>
                     </div>
                     <div className={cx("page-body")}>
-                        <p>Bạn đã có tài khoản? <Link to="/sign-in">Đăng nhập ngay</Link></p>
+                        <p><span>Bạn đã có tài khoản?</span> <Link to="/sign-in">Đăng nhập ngay</Link></p>
                         <form onSubmit={formik.handleSubmit}>
                             <div className={cx("box-name")}>
                                 <Tippy

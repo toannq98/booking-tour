@@ -30,6 +30,7 @@ function Sort({ handleLoadSortTours }) {
     }
     useEffect(() => {
         handleLoadSortTours(typeCurrent);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [typeCurrent]);
 
     return (

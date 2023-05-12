@@ -58,16 +58,6 @@ function SideBar() {
             to: 16000000
         }
     ];
-    const pramscate = checkedCate.map(el => 'idCate=' + el);
-    const pramsPrice = checkedPrice.map(el => {
-        const price = PRICE.find(p => p.id === el);
-        return `price_gte=${price.from}&price_lte=${price.to}`;
-    });
-
-    const prams = [...pramscate, ...pramsPrice];
-
-    // console.log(prams);
-    // console.log(prams);
 
     useEffect(() => {
         dispatch({ type: "fetchCategories" });
@@ -75,11 +65,18 @@ function SideBar() {
 
     useEffect(() => {
         if (checkedCate.length > 0 || checkedPrice.length > 0) {
+            const pramscate = checkedCate.map(el => 'idCate=' + el);
+            const pramsPrice = checkedPrice.map(el => {
+                const price = PRICE.find(p => p.id === el);
+                return `price_gte=${price.from}&price_lte=${price.to}`;
+            });
+            const prams = [...pramscate, ...pramsPrice];
             dispatch({ type: "fetchFilterToursByCate", payload: { prams: prams.join("&") } });
         } else {
             dispatch({ type: "fetchToursCatePage", payload: { id: cateId } });
         }
-    }, [dispatch, cateId, prams, checkedCate.length, checkedPrice.length]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [dispatch, cateId, checkedCate.length, checkedPrice.length]);
 
     const handleFilterByCate = (id) => {
         setCheckedCate(prev => {

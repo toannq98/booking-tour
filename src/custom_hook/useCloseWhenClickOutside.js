@@ -15,7 +15,7 @@ function useCloseWhenClickOutside(ref, onClose) {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [ref]);
+    }, [ref, onClose]);
 }
 
 export default useCloseWhenClickOutside;
